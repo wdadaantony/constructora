@@ -1,0 +1,13 @@
+{
+  "name": "romerito-construccion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sitio web de Romerito Construcción",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node generate.mjs",
+    "check": "node --check site.mjs && node --check dist/app.js && node --check server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
