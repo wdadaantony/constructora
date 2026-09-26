@@ -28,6 +28,17 @@ npm run build
 
 Las páginas listas para un alojamiento estático se encuentran en `dist/` y se incluyen en este repositorio. La página de entrada es `dist/index.html`.
 
+## Publicar en Netlify
+
+Importa el repositorio `wdadaantony/constructora` en Netlify y selecciona la rama `main`. El archivo `netlify.toml` configura automáticamente:
+
+- Directorio base: raíz del repositorio (dejar vacío).
+- Comando de compilación: `npm run build`.
+- Directorio de publicación: `dist`.
+- Node.js: versión 22.
+
+No se requieren variables de entorno. Al conectar el repositorio, los nuevos commits en `main` podrán desplegarse automáticamente.
+
 ## Contacto y cotizaciones
 
 Los formularios preparan una consulta que el visitante revisa y envía mediante WhatsApp. No hay un servidor de correo ni una base de datos de clientes. El configurador permite descargar un resumen de preferencias; no calcula precios. Los importes, plazos y cobertura deben confirmarse con la empresa.
